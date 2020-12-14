@@ -1,6 +1,7 @@
 "Damnatio Memoriae" by Emily Short.
 
 Include (- Serial "060503"; -).
+The story creation year is 2006.
 
 The story headline is "A story of the Lavori d'Aracne". The story genre is "Historical". The story description is "14 AD. Agrippa Postumus, grandson of the recently-deceased Augustus, tries to avoid death at the hands of the next emperor, Tiberius. At his disposal: a couple of old manuscripts, a lamp, and a recalcitrant slave. And a powerful knowledge of the Art of Venus Genetrix, of course -- the magic eventually known as the Lavori d'Aracne.
 
