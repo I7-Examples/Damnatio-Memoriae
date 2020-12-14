@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Damnatio Memoriae - Source Text</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
+					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
+					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2020) - the Inform 7 source text</font></h3>
+				</td></tr>
+		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_14.html">Previous</a><br><a href="source_16.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Book 3 - Identification Issues</b>
+<br>
+
+<br>
+A person can be introduced or strange. A person has a property called a tag. The tag of a person is usually &quot;<font color=#000080>no one of note</font>&quot;.
+<br>
+
+<br>
+After printing the name of a strange person (called the victim):
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;now the victim is introduced;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080> ([the tag of the victim])</font>&quot;.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+After printing the name of a person (called the victim) while listing persons:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080> ([the tag of the victim])</font>&quot;.
+<br>
+
+<br>
+Definition: a person is other if it is not the player.
+<br>
+
+<br>
+Understand &quot;<font color=#000080>personae</font>&quot; as listing persons. Understand &quot;<font color=#000080>who</font>&quot; as listing persons.
+<br>
+
+<br>
+Listing persons is an action applying to nothing.
+<br>
+
+<br>
+Carry out listing persons:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You've recently had cause to recollect [the list of introduced people].</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of examining the player:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You're Agrippa Postumus, son of Julia and Agrippa, grandson of Caesar Augustus; and if his scheming wife Livia hadn't put forth her son Tiberius Nero, you would also be the likeliest heir to your grandfather's place.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>Instead you're exiled on a bare island not far off Elba, scorned by the Senate and hated by half your relations, with only the consolation of literature.</font>&quot;
+<br>
+
+<br>
+The tag of the player is &quot;<font color=#000080>son of Julia and Agrippa, who died before you were born</font>&quot;.
+<br>
+
+<br>
+Rule for printing the name of the player while examining:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the noun is the vase, say &quot;<font color=#000080>Agrippa Postumus</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;otherwise say &quot;<font color=#000080>you</font>&quot;.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+<br>
+
+<br>
+</font>
+					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
+					<p></p>
+				</td></tr></table>
+	</body>
+
+</html>

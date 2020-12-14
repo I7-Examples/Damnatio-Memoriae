@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Damnatio Memoriae - Source Text</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
+					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
+					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2020) - the Inform 7 source text</font></h3>
+				</td></tr>
+		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_28.html">Previous</a><br><a href="source_30.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Book 3 - Finale</b>
+<br>
+
+<br>
+The endgame rules are a rulebook.
+<br>
+
+<br>
+Started printing is a number that varies. Started printing is 0.
+<br>
+
+<br>
+A person can be apparently guilty or apparently innocent. The player is apparently innocent.
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see the corpse
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]They swear graphically at the sight of [the corpse]. 'What's this?' one of them asks another. 'Someone didn't get here before us...?'
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>'...No. That'll be a slave.'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>More swearing.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>'Calm yourself, Manlius -- it's nothing to us if he's been offing his slaves. For all we know the man did something to deserve it. Mind on the work, now.' Tiberius did always accumulate the most pleasant toadies.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+
+<br>
+An endgame rule: 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the player is in the Outdoors and the player does not protect Clemens 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]'Right then,' says one of them, poking his head out the window. 'I thought I might find you here.' And he drags you back inside and sets you firmly on the floor.[paragraph break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move the player to the Study, without printing a room description;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if a visible thing incriminates the player, say &quot;<font color=#000080>Involuntarily you find yourself glancing toward [the list of visible things which incriminate the player].[line break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>'And Tiberius is worried about being outwitted by this one?' says the skinniest. There's a general chuckling which makes you want to kick someone, but you refrain.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the player is carrying Clemens
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move Clemens to location;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>In all the fun, you also drop Clemens unceremoniously.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if something underlies the haystack
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[line break]'Wait a moment,' says one of the brighter-looking ones. 'What was he doing outside?'
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>'Right!' says the one who hauled you in. He hops through the window and can be heard rummaging for a moment. He returns and puts [the list of things underlying the haystack] down.[paragraph break]</font>&quot;; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now every thing which underlies the haystack is in the Study;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now every thing which underlies the haystack is recovered;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now every thing which underlies the haystack does not underlie anything;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+A thing can be recovered or ordinary. A thing is usually ordinary.
+<br>
+
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the player protects Clemens, make no decision;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if Clemens is silent
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]The soldiers poke at Clemens, trying to wake him and question him, but no matter what they do, he remains completely still, frighteningly inert.[paragraph break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make no decision;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see Clemens and Clemens incriminates the player
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now the player is apparently guilty;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start][if Clemens is recovered]They look back and forth between you and Clemens, confused now. You begin to have hopes, but then he wakes up. [otherwise]Clemens sits bolt upright. 'Could you lot keep quiet?' he demands in a peevish accent. 'I'm a delicate sleeper, practically an insomniac... you have no idea how difficult it is for me to catch the least rest... and here you are running over the place as though you own it, and disturbing innocent sleep!'
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>There is a moment's astonished silence from the soldiers.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>'Is that--'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>'But he's an imbecile!'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>'--no wonder Tiberius wants him killed!' [end if]
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>Clemens begins to cough in a supremely annoying way. 'Gentlemen, forgive me, but I am terribly ill, and only a slave in this house, and you have no idea the strange things my master gets up to, no idea... they're quite unnatural.'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>Damn him to a little black crisp. But he goes on, simpering and murmuring out his story, much embellished, about all your strange magical activities, some of which are astonishingly perverse, and not in the line of scholarship at all.[paragraph break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the player is apparently guilty, make no decision;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see the old letter and the old letter incriminates Julia and the old letter incriminates the player
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now the player is apparently guilty;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now Julia is apparently guilty;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]Someone finds [the old letter].
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>'This is something,' says one of them in a slow voice. 'The runt is definitely at fault, and so, it appears, is his mother.'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>'Tiberius will be interested in [italic type]that[roman type],' says the second voice.[paragraph break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see the pitcher and the pitcher incriminates the player
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the player is apparently guilty, make no decision; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now the player is apparently guilty;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]They mill around, talking to each other and themselves, swearing and generally making a mess of things, until one of them says, 'By Jupiter! Look at this.' They gather around the painted pitcher, and one of them even puts out a hand to touch it.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>'Signed his name right on it,' says one of them wonderingly. Yes, quite. Because you had not thought it would matter, in the end...</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see something (called the evidence) which incriminates the player and started printing is 0
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now the player is apparently guilty; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]The soldiers mill around until one of them lights on [the evidence] and points it out to the others. They're no fools, these -- at least one of them must be quite high ranking, though from their dress you wouldn't be able to tell. But they do know what they're looking for.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see the player, make no decision;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see Clemens and the player protects Clemens
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if started printing is 0, say &quot;<font color=#000080>[start]'Found him,' announces one of the military voices, grimly satisfied.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>'Poor bastard.'[paragraph break]</font>&quot;; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if Clemens is silent
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]'He looks dead,' says one of them. 'I can't wake him. He doesn't seem to be breathing.'
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>'Maybe he killed himself,' agrees one of the others. 'But it is a strange death -- we had better take the body with us.'</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the player is apparently innocent,
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]Clemens grunts, as though someone has woken him a little roughly. 'You,' says one of the guard. 'We've been over the house, not found what Tiberius sent us to look for.'
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>Clemens moans stupidly. It strikes you that his near-comatose sleep earlier probably had to do with overindulgence with wine, flute girls, or both.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>'Dumber than an ox,' remarks one of the soldiers to another. 'Leave him. He's no danger here.'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>And they go out. Out! You did it. And now the choice is yours: to go back inside and resume your life of exile, or to find an escape from this island, while Clemens plays the part of you. Who knows? You might even make it back to Rome...
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>But you aren't dead. Augustus and his warnings bought you that much, at least.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise say &quot;<font color=#000080>Clemens gives an indignant shout as though someone has prodded him with a sharp thing. 'You,' says one of the guard. 'Wake up: Tiberius sent us to work on you.'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>Never too quick on first waking, Clemens. He doesn't say anything at first, and then he starts muttering incoherently about how he doesn't know what Tiberius wants. Obviously it hasn't even occurred to him that his identity has been mistaken.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>But they hustle him off, and you, you survive. So must he, but it's probably not a happy life: they'll have found they can't easily kill him, but his prison must be uncomfortable.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>It isn't yours, though. That's the main thing. You live, free; take his name, and travel as a member of the servant class, for now. There will be time enough to change that later. One of these days you may even make it back as far as Rome.</font>&quot;;  
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the player is apparently guilty, make no decision;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if Clemens is silent, make no decision;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if Clemens is in the Outdoors and the soldiers can see the player and Clemens incriminates the player
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]For a moment you have hopes that everything will be well. Then from the window comes a familiar sound: a long deep snore like the sawing of wood.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>One of the soldiers puts his head outside and hauls Clemens firmly in through the opening. 'Look, I thought it was a bear, but it is only a drunk.'[paragraph break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move Clemens to the location;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>They then set about waking him, which they eventually achieve by the expedient of opening his eyelids manually.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>'SLAVE,' says a burly soldier. 'Have you seen your master here doing any unusual Arts or magics?'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>Clemens glances over at you, and you see the rapid calculation going on in his head. Defend, betray? Will there be tortures, or will there be bribes? But you lose the battle in his mind quite quickly. He nods, searching for something sufficiently interesting to offer. 'Very unusual,' he says. 'With-- young boys. And sheep.'
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>The soldiers glance at one another. 'Runs in the family,' one of them remarks dryly. 
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>'But making one thing behave like another? Unnaturally?' prompts the leader.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>Clemens grimaces, then nods again. 'Things open and shut by themselves,' he says. 'And he knows how to unlock a box from the other room.' Yes, that will be enough; that will end you.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>He avoids your eye.[paragraph break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Rule for deciding the concealed possessions of the player: if the particular possession incriminates the player, yes.
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see the player and the player is apparently innocent
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the player is carrying something which incriminates the player 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now the player is apparently guilty; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]The biggest and most black-bearded of the lot now gets around to searching your personal possessions -- it would be too much to hope that they wouldn't. He has very white teeth, which makes you think of the old verses about the Spanish and their interesting cosmetic use of urine...
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>But this distraction only keeps your face placid for a moment. The bruiser digs up [the list of damning things carried by the player], and tuts pointedly.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now every damning thing carried by the player is carried by the soldiers;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the Clemens does not incriminate the player and the soldiers can see Clemens and Clemens is not silent
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]The soldiers prod Clemens awake and ask him a few questions; he opens his mouth to speak, but you exert the full force of your will through the reverse link, and all that comes out is an inebriated hiccup. (Difficult work, that -- it wouldn't work at a greater distance, and you can't make him say anything. But still, a useful trick.) In any case, he is judged too drunk to offer any useful evidence.[line break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the Phaenomena incriminates Germanicus
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now the Phaenomena mentions Germanicus;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now the Phaenomena does not incriminate Germanicus;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;repeat with evidence running through damning things which can be seen by the soldiers
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now every person incriminated by the evidence is apparently guilty;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end repeat.
+<br>
+
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see the player and the player is apparently guilty
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the player affects Clemens
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if Clemens protects the player
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]The soldiers then try to assassinate you, as they no doubt have been instructed to do. But your reverse-link to Clemens holds strong, so while you experience quite a lot of discomfort, you manage not to be killed.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>There ensues a perverse comedy, with them attempting bludgeonings and hackings and even forcing you to take poison, which you would find amusing if it weren't so hugely unpleasant. For an hour you run blood for them from opened veins, until they get tired of the display and bandage you up again.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>The end of it all is that they carry you off by force to be imprisoned somewhere much deeper and more unpleasant; so while you do not die, you can't count it an entire success, either.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end the game saying &quot;<font color=#000080>You have been imprisoned</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rule succeeds;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if Clemens affects the player
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if Clemens is visible
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]It seems the soldiers have been given permission to kill you immediately, and this they proceed to do. You only very briefly have time to reflect that Clemens shares your demise.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]It seems the soldiers have been given permission to kill you immediately, and this they proceed to do. Somewhere, out of sight, Clemens will be dying also.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if Clemens is visible
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]It seems the soldiers have been given permission to kill you immediately. This process involves a spear through the heart, which is intensely painful, and which you feel with much more clarity than you would have imagined possible.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>At once a wound opens in the slave's chest. He screams, the soldiers scream, there is blood and yelling about eastern magic; the spear is still inside you, your heart beating laboriously in spite of it. One of them cuts the head off Clemens, but that's not enough -- your slave-link had a strong grip on him, and his body still stands there.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>Eventually you, and the Clemens-corpse, are packed up in wagons under guard and taken to a deeper prison where, if they cannot figure out how to kill you, they can make your life deeply unhappy. And this all could have ended so much better.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obliterate Clemens;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end the game saying &quot;<font color=#000080>You have been imprisoned</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rule succeeds;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]It seems the soldiers have been given permission to kill you immediately. This process involves a spear through the heart, which is intensely painful, and which you feel with much more clarity than you would have imagined possible.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>But you do not die of it.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>Instead you lie very still.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>Later, they go out, even expressing a little distress at having had to kill you. Then you get up, and remove the spear, and wander around to where the Clemens corpse is, bleeding from the torso.</font>&quot;; end the game saying &quot;<font color=#000080>You have faked your own death</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rule succeeds;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[start]It seems the soldiers have been given permission to kill you immediately, and this they proceed to do...</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end the game in death;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+An endgame rule:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the soldiers can see the player and the player is apparently innocent
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if started printing is 0, say &quot;<font color=#000080>[start]They search impatiently, sometimes glancing at you as though puzzled by your demeanor. You smile at them blandly.[line break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the player protects Clemens and Clemens protects the player, 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>They then have a hasty conference about which of you is the slave and which the relative of Tiberius they were sent to deal with (obviously considering it unhelpful to ask you directly). Eventually it is your dress that gives you away: you've always been generous with Clemens, and his clothing is of good material, but he eats so much like a pig that he looks the part of slave despite your best efforts.
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>There is a further conversation about what this resemblance means, but eventually they draw some ribald conclusions about your mother, and withdraw.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise say &quot;<font color=#000080>The soldiers confer among themselves in low voices for another minute, then turn to you. 'Tiberius sends his wishes for your continued health after the death of your grandfather,' says the chief of them, managing somehow not even to smile. 
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>No one alludes to the fact that this good-health salutation came with a thorough destruction of your house and personal belongings.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font>
+					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
+					<p></p>
+				</td></tr></table>
+	</body>
+
+</html>

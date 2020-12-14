@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Damnatio Memoriae - Source Text</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
+					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
+					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2020) - the Inform 7 source text</font></h3>
+				</td></tr>
+		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_19.html">Previous</a><br><a href="source_21.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 4 - Your Slave Clemens</b>
+<br>
+
+<br>
+<b>Section 1 - Alive</b>
+<br>
+
+<br>
+Clemens is a man in the Water Study. &quot;<font color=#000080>[Clemens] is [if snoring]snoring in the corner, [end if]oblivious to what is about to happen. He is [if the player affects clemens]almost indistinguishable from[otherwise]very similar to[end if] yourself: strongly built, with aquiline features, keenly intelligent, but losing himself in physical outbursts when enraged[if the player protects Clemens]. He will also now have -- though he may not know how to use -- your Arts and abilities. As a double he could not be more convincing[end if].</font>&quot; The description of Clemens is &quot;<font color=#000080>Your mother bought him when you were a teenager. He is not a very good slave in most respects, but she thought his resemblance to you might someday become useful[if the player protects clemens]. That day may well have arrived[otherwise].
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>Unfortunately, he's familiar with your secret[end if][if the vase affects Clemens and Clemens is silent]. The good news is that he's unlikely to be able to tell it in this state, subject to the vase[end if].</font>&quot; Understand &quot;<font color=#000080>slave</font>&quot; or &quot;<font color=#000080>man</font>&quot; or &quot;<font color=#000080>look-alike</font>&quot; or &quot;<font color=#000080>useless slave</font>&quot; as Clemens. Clemens can be snoring or silent. Clemens is snoring. The shattering description of Clemens is &quot;<font color=#000080>sort of breaks, like a man on the rack -- it's a horrible sound, and a horrible sight as well</font>&quot;. 
+<br>
+
+<br>
+Before taking Clemens when the number of things carried by the player &gt; 0:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if  Clemens is carried by the player, continue the action;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You can't move Clemens while carrying much of anything else.</font>&quot; instead.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Before taking something when the player is carrying Clemens:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the noun is Clemens, continue the action;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>Your hands are completely full with Clemens.</font>&quot; instead.
+<br>
+
+<br>
+Instead of taking Clemens when Clemens is not carried by the player:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;move Clemens to the player;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You manage, though with considerable difficulty, to lift Clemens.</font>&quot; instead.
+<br>
+
+<br>
+The tag of Clemens is &quot;<font color=#000080>your useless slave</font>&quot;. Clemens incriminates the player. Instead of listening to a snoring Clemens: say &quot;<font color=#000080>[Clemens] snores throatily.</font>&quot; Instead of listening to a silent Clemens, say &quot;<font color=#000080>[Clemens] has been silenced quite effectively.</font>&quot;
+<br>
+
+<br>
+Instead of attacking Clemens when Clemens affects the player:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the player protects Clemens
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You punch Clemens in the arm, but it's a little like punching a pillow; the reverse-link protects him from any real harm.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You punch Clemens, and immediately get a searing pain in your own jaw. Amazingly he doesn't seem to be bothered by it, or at least not enough to wake up. A good Falernian can truly work wonders.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of killing Clemens when Clemens affects the player:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the player protects Clemens
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You start to throttle the poor man, feeling the same choking grasp around your own throat -- but of course the protection of the reverse link keeps him breathing, though uncomfortably and unnaturally.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>Murdering someone linked to you is rarely a successful enterprise, you note. For future reference.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You put your hand to his neck and immediately feel that same deadly grip around your own windpipe.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>He gags in his sleep, and your hold slackens at once. No good throttling someone who's linked to you!</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+
+<br>
+Instead of attacking Clemens:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>Repeated blows about the head and neck fail to rouse Clemens from his stupefaction. You begin to wonder whether he's really as sleepy and hung over as all that, or whether he is merely shamming. He'll do almost anything to avoid involvement in an unpleasant situation, Clemens.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of killing Clemens:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You have the advantage of surprise: though [Clemens] wakes up halfway through being throttled, he doesn't fight back very effectively, and soon you have subdued him.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>Now he won't be able to speak to anyone about you[if the player affects Clemens], though your link with him is pretty much at an end as well[end if].</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy Clemens.
+<br>
+
+<br>
+After throwing Clemens out the window:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You pitch Clemens through the window, expecting this (at least) to wake him. 
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>There's a dramatic OOF, but he keeps snoring away.</font>&quot;
+<br>
+
+<br>
+After dropping Clemens:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You lower the still-sleeping Clemens to the floor.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Before hiding Clemens under something which is not the haystack:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[Clemens] will certainly not fit under [the second noun].</font>&quot; instead.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+After hiding Clemens under the haystack:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You bury Clemens under a great deal of hay, which is just enough to stifle his snoring.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of burning Clemens:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You hold the flame to his skin, where it singes off some hair, but he just grumbles and pulls away[if Clemens affects the player]. This stings you in a mild way, too[end if].</font>&quot;
+<br>
+
+<br>
+Instead of listening to the Water Study in the presence of Clemens:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;try listening to Clemens.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of asking Clemens to try doing something:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>He rarely follows your commands even when awake.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Asking Clemens about something is communication. Telling Clemens about something is communication. Answering Clemens that something is communication. Asking Clemens for something is communication.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of communication:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if Clemens is snoring, say &quot;<font color=#000080>The only response you get is a jerky snore.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;otherwise say &quot;<font color=#000080>He remains utterly silent.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Understand &quot;<font color=#000080>talk to [someone]</font>&quot; or &quot;<font color=#000080>chat with [someone]</font>&quot; as chatting with. Understand the command &quot;<font color=#000080>converse</font>&quot; as &quot;<font color=#000080>chat</font>&quot;. Chatting with is an action applying to one thing. Instead of chatting with a silent Clemens: say &quot;<font color=#000080>In his current state, he would be unable to hold a conversation even if conscious.</font>&quot; Instead of chatting with a snoring Clemens: say &quot;<font color=#000080>You offer a few reflections on the weather in Planasia at this time of year. He snores loudly in response.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font>
+					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
+					<p></p>
+				</td></tr></table>
+	</body>
+
+</html>

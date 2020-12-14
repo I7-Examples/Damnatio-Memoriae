@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Damnatio Memoriae - Source Text</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
+					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
+					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2020) - the Inform 7 source text</font></h3>
+				</td></tr>
+		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_21.html">Previous</a><br><a href="source_23.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 5 - The Vase</b>
+<br>
+
+<br>
+The vase is a container in the Water Study. &quot;<font color=#000080>A substantial vase, an antique, stands near the window.</font>&quot; It is impervious, inscribed, fragile, open, and not openable. It mentions Clemens. Understand &quot;<font color=#000080>krater</font>&quot; or &quot;<font color=#000080>fates</font>&quot; or &quot;<font color=#000080>achilles</font>&quot; as the vase. The vase is fixed in place. The vase resembles the pitcher.  Clemens resembles the vase.
+<br>
+
+<br>
+Instead of turning the vase when the vase protects the whole pitcher:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You try rotating the krater to expose a different side of the pitcher to view in the wall-painting, but -- since the pitcher is perfectly glassy -- the Venus Genetrix is still quite visible in reverse, and the letters legible, boustrophedontic.</font>&quot;
+<br>
+
+<br>
+The low stool is an enterable supporter in the Water Study. &quot;<font color=#000080>There's also a low stool[if something underlies the stool], the sort that things roll under and get lost[end if].</font>&quot; The description of the low stool is &quot;<font color=#000080>Very squat. It is uncomfortable for sitting on, and annoying for not being able to find things under. You were considering perhaps throwing it away, only there is not much new furniture being delivered to Planasia, or, for that matter, made to order.</font>&quot;
+<br>
+
+<br>
+Before hiding something under the stool when something underlies the stool:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>The stool can only effectively conceal one thing at a time.</font>&quot; instead.
+<br>
+
+<br>
+Instead of pushing or pulling or turning something concealing:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;try looking under the noun.
+<br>
+
+<br>
+Instead of kissing Clemens:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>Suppressing your distaste, you drop a kiss on the sleeping Clemens. He sleepily murmurs the name of one of the slave girls who works in the kitchen. Fascinating.</font>&quot;
+<br>
+
+<br>
+Instead of waking Clemens for the first time:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You gently shake Clemens by the shoulder. This has absolutely no effect.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of waking Clemens for the second time:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You shake Clemens again, a little bit less gently this time around.
+<br>
+</font><font color=#000080>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font><font color=#000080>Still no luck.</font>&quot;
+<br>
+
+<br>
+Instead of waking Clemens for the third time:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You lean close to his ear and yell his name. He snorts! But then the heavy, wine-scented respiration begins again.</font>&quot;
+<br>
+
+<br>
+Instead of waking Clemens for the fourth time:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You slap Clemens about the cheeks. He goes on snoring profoundly.</font>&quot;
+<br>
+
+<br>
+Instead of waking Clemens for the fifth time:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You slug Clemens in the gut. He mutters some Greek oaths, but does not so much as open one eye.</font>&quot;
+<br>
+
+<br>
+Instead of waking Clemens:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>It is by now evident that nothing, not even Aetna opening beneath him, would rouse Clemens from slumber a moment sooner than he wants to be roused.</font>&quot;
+<br>
+
+<br>
+Instead of examining the vase:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if something (called the master) affects the vase
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the master mentions someone
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the master mentions Julia and the master mentions the player
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>A Greek krater with Achilles on one side and the Fates on the other. 
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>One night in a drunken fling Clemens scratched some writing about your mother into the black field behind Clotho. 
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>And to make matters worse, someone has written your name so it seems to be emerging out of the mouth of Achilles, on the other side, as though he's calling out to you.</font>&quot; instead;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let the grafitee be a random person mentioned by the master;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; let the grafitee be Clemens;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;otherwise; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the vase mentions someone (called the grafitee), let the character be the grafitee;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise let the grafitee be Clemens;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>A Greek krater with Achilles on one side and the Fates on the other. 
+<br>
+</font><font color=#000080>
+<br>
+</font><font color=#000080>One night in a drunken fling Clemens scratched some writing into the black field behind [if the grafitee is a woman]Clotho[otherwise]Achilles[end if]. So now it says [italic type][the grafitee] est kal[if the grafitee is a woman]e[otherwise]os[end if][roman type] in a pig mixture of Greek letters and Roman. Roughly, [italic type][the grafitee] is hott[end if][roman type][if the grafitee is Julia]. Kind of a kinky thing to have lying about the house referring to your own mother[end if].</font>&quot;
+<br>
+
+<br>
+</font>
+					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
+					<p></p>
+				</td></tr></table>
+	</body>
+
+</html>

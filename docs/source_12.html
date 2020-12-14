@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Damnatio Memoriae - Source Text</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
+					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
+					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2020) - the Inform 7 source text</font></h3>
+				</td></tr>
+		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_11.html">Previous</a><br><a href="source_13.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 4 - Breaking</b>
+<br>
+
+<br>
+Understand &quot;<font color=#000080>attack [something] with [something held]</font>&quot; as attacking it with.
+<br>
+
+<br>
+Attacking it with is an action applying to two things.
+<br>
+
+<br>
+Check attacking it with:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the second noun is the lamp, try burning the noun instead;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the second noun is a paper, say &quot;<font color=#000080>[The second noun] is a very ineffective bludgeon.</font>&quot; instead;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the second noun is a book, say &quot;<font color=#000080>[The second noun] is not yet weighty enough to be any use in that sense.</font>&quot; instead; 
+<br>
+
+<br>
+Carry out attacking it with:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;try attacking the noun.
+<br>
+
+<br>
+Understand &quot;<font color=#000080>rip [something]</font>&quot; or &quot;<font color=#000080>rip up [something]</font>&quot; or &quot;<font color=#000080>rip [something] up</font>&quot; as attacking.
+<br>
+
+<br>
+Understand the commands &quot;<font color=#000080>tear</font>&quot; or &quot;<font color=#000080>shred</font>&quot; as &quot;<font color=#000080>rip</font>&quot;.
+<br>
+
+<br>
+Instead of attacking a paper:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You rip [the noun] to shreds.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun. 
+<br>
+
+<br>
+Instead of attacking something fragile:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You smash [the noun].</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+A thing has a property called shattering description. The shattering description of a thing is usually &quot;<font color=#000080>shatters under an invisible blow, and the link dies with it</font>&quot;. 
+<br>
+
+<br>
+Understand the commands &quot;<font color=#000080>kill</font>&quot; and &quot;<font color=#000080>attack</font>&quot; and &quot;<font color=#000080>murder</font>&quot; and &quot;<font color=#000080>destroy</font>&quot; as something new. Understand &quot;<font color=#000080>kill [someone]</font>&quot; as killing. Understand &quot;<font color=#000080>kill [something]</font>&quot; as killing. Understand the commands &quot;<font color=#000080>murder</font>&quot; and &quot;<font color=#000080>destroy</font>&quot; and &quot;<font color=#000080>attack</font>&quot; as &quot;<font color=#000080>kill</font>&quot;. 
+<br>
+
+<br>
+Killing is an action applying to one thing. Instead of killing a thing which is not a person, try attacking the noun. Carry out killing: say &quot;<font color=#000080></font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of attacking the player when Clemens protects the player:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You hit yourself. It does hurt, but you suspect Clemens gets the brunt of it.</font>&quot;
+<br>
+
+<br>
+Instead of attacking the player:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the player affects Clemens, say &quot;<font color=#000080>You punch yourself in the thigh, which is not a very edifying process. If Clemens feels anything, you receive no sign of it.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;otherwise say &quot;<font color=#000080>You hit yourself, which does hurt, but accomplishes no useful purpose. Killing yourself, now, that would require a bit more focus.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of killing the player:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if Clemens protects the player, say &quot;<font color=#000080>You make some attempts to slit your wrists, but the blood just flows and flows.</font>&quot; instead;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the player affects Clemens
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You attack yourself; it is Clemens who dies.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;destroy Clemens;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>Seeing no honorable and unembarrassing way out of your predicament, you open your veins, and are soon free from earthly cares.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end the game in death;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of attacking something sturdy:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The noun] is not so easily destroyed.</font>&quot;
+<br>
+
+<br>
+Instead of attacking something fragile which affects something important (called the slave):
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the slave is sturdy and the slave protects the noun, say &quot;<font color=#000080>[The noun] resists smashing, thanks to its link with [the slave].</font>&quot; instead;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the slave affects the noun
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The noun] shatters.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the slave is visible, say line break;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the slave is visible, say &quot;<font color=#000080>[The slave] [shattering description of the slave].</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy the slave;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the noun is ruined, say line break.
+<br>
+
+<br>
+</font>
+					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
+					<p></p>
+				</td></tr></table>
+	</body>
+
+</html>

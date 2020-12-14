@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Damnatio Memoriae - Source Text</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
+					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
+					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2020) - the Inform 7 source text</font></h3>
+				</td></tr>
+		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_17.html">Previous</a><br><a href="source_19.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 2 - Window and Escape</b>
+<br>
+
+<br>
+The window is outside from the Water Study and inside from the Outdoors. It is a door. It is open and scenery. The description of the window is &quot;<font color=#000080>A square window giving onto flat ground.</font>&quot;  It is not openable.
+<br>
+
+<br>
+After going to the Outdoors from the Water Study:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>Any other direction would be unsafe at the moment, so you climb gingerly out the window...</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;continue the action.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+After going to the Water Study from the Outdoors:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You clamber back over the windowsill.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;continue the action.
+<br>
+
+<br>
+Before inserting something into the window: try throwing the noun out the window instead.
+<br>
+
+<br>
+Before going outside with something (called the burden): try throwing the burden out the window instead.
+<br>
+
+<br>
+Understand &quot;<font color=#000080>throw [something] out/through [window]</font>&quot; as throwing it out. Understand &quot;<font color=#000080>push [something] out/through [window]</font>&quot; as throwing it out.
+<br>
+
+<br>
+Throwing it out is an action applying to two things.
+<br>
+
+<br>
+Check throwing it out:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the noun is not pushable between rooms and the noun is not carried by the player
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>(first taking [the noun])[line break]</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;silently try taking the noun;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the noun is not carried by the player, stop the action;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the noun is fragile and the noun is not protected by something sturdy, say &quot;<font color=#000080>[The noun] won't survive the trip.</font>&quot; instead.
+<br>
+
+<br>
+Carry out throwing it out:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;move the noun to the Outdoors.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Report throwing it out:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You casually toss [the noun] out of the window; perhaps you'll be able to collect it later.</font>&quot;
+<br>
+
+<br>
+Instead of searching the window: say &quot;<font color=#000080>There's little to see: the island is extremely flat and offers little other civilization, and no escape besides the ships that carry your enemies. Running away will do no good.</font>&quot;
+<br>
+
+<br>
+</font>
+					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
+					<p></p>
+				</td></tr></table>
+	</body>
+
+</html>

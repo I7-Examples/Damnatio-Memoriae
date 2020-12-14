@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Damnatio Memoriae - Source Text</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
+					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
+					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2020) - the Inform 7 source text</font></h3>
+				</td></tr>
+		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_24.html">Previous</a><br><a href="source_26.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 8 - The Lamp</b>
+<br>
+
+<br>
+A liquid is a kind of thing. Before labor when the noun is a liquid or the second noun is a liquid: say &quot;<font color=#000080>You have no such powers over liquids.</font>&quot; instead. A liquid has a property called the spilling description. The spilling description of a liquid is usually &quot;<font color=#000080>spills out on the ground, and soon soaks in</font>&quot;.
+<br>
+
+<br>
+The lamp is a lit container carried by the player. The description is &quot;<font color=#000080>A [if lit]lit[otherwise]now-empty[end if] oil lamp.</font>&quot; It is fragile. The lamp contains a quantity of oil. The oil is a liquid. Instead of doing something to the oil, say &quot;<font color=#000080>The oil is busily burning.</font>&quot; The lamp resembles the pitcher. The spilling description of the oil is &quot;<font color=#000080>spills on the ground, where it spreads fast -- you briefly worry that you're about to set something on fire -- but the flames soon flicker out and the oil itself soaks in</font>&quot;.
+<br>
+
+<br>
+Instead of inserting something into the lamp:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>The lamp is oily, and needs no other contents.</font>&quot;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Understand &quot;<font color=#000080>empty [something]</font>&quot; as emptying. Emptying is an action applying to one thing. Check emptying: if the noun is a person, say &quot;<font color=#000080>A disturbing notion worthy of a Gaul.</font>&quot; instead; if the noun is not a container, say &quot;<font color=#000080>[The noun] [is/are] incapable of containment in any case.</font>&quot; instead; if the noun does not contain something, say &quot;<font color=#000080>[The noun] [is/are] already empty.</font>&quot; instead. Carry out emptying: now every thing in the noun is in the location. Report emptying: say &quot;<font color=#000080>You dump out [the noun], leaving [it/them] empty.</font>&quot;
+<br>
+
+<br>
+Instead of emptying the lamp when the oil is in the lamp:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;remove the oil from play;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The oil] [spilling description of the oil].</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;change the lamp to unlit.
+<br>
+
+<br>
+Before burning something when the player is not carrying the lit lamp:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>It would help if you had a fire source.</font>&quot; instead.
+<br>
+
+<br>
+Instead of thinking:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You take a quick glance around the room, noticing everything that might incriminate: [the list of visible things which incriminate someone][if the number of visible things which incriminate someone is 1] is the only thing left[end if].</font>&quot;; 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font>
+					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
+					<p></p>
+				</td></tr></table>
+	</body>
+
+</html>

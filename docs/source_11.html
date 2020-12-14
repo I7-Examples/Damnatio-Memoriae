@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Damnatio Memoriae - Source Text</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
+					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
+					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2020) - the Inform 7 source text</font></h3>
+				</td></tr>
+		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_10.html">Previous</a><br><a href="source_12.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 3 - Burning</b>
+<br>
+
+<br>
+A thing can be flammable or impervious. A thing is usually impervious. A thing can be fragile or sturdy. A thing is usually sturdy.
+<br>
+
+<br>
+A thing has a property called fiery description. The fiery description of a thing is usually &quot;<font color=#000080>is consumed in phantom flames, and the link dies with it</font>&quot;. The fiery description of an impervious thing is usually &quot;<font color=#000080>catches impossible fire and turns into a cloud of thick, formed smoke before dissipating. The link too is gone, of course</font>&quot;.
+<br>
+
+<br>
+Instead of burning something flammable:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You set [the noun] on fire and are quickly rid of it.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of burning the Phaenomena:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You set fire to [the Phaenomena]; it burns very quickly and fiercely, the letters curling and fading. Years of work, and it will be gone in another minute. You tell yourself that you might one day recreate it, but you know you will not have the will to do all that again. The passion for such a project only comes once.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Instead of burning the haystack when Clemens underlies the haystack:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You set [the noun] on fire, and it goes up with an impressive amount of smoke.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[line break]Clemens is not in the best shape, in fact.</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy Clemens.
+<br>
+
+<br>
+Instead of burning the player:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>Surely there are more rapid and less ridiculous methods of suicide, if that is your chosen course.</font>&quot;
+<br>
+
+<br>
+Instead of burning something impervious:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The noun] refuses to catch fire.</font>&quot;
+<br>
+
+<br>
+Instead of burning something flammable which affects something important (called the slave):
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the slave is impervious and the slave protects the noun, say &quot;<font color=#000080>[The noun] resists flame, thanks to its link with [the slave].</font>&quot; instead;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the slave affects the noun
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The noun] burns up. </font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end if;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if the slave is visible, say &quot;<font color=#000080>[The slave] [the fiery description of the slave].</font>&quot;;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;destroy the slave.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+</font>
+					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
+					<p></p>
+				</td></tr></table>
+	</body>
+
+</html>
