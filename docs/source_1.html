@@ -1,70 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<head>
+  <title>Emily Short - Damnatio Memoriae — 3 of 34</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Emily Short" />
+  <meta name="description" content="A page for the game Damnatio Memoriae by Emily Short." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
 
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-		<meta name="generator" content="Adobe GoLive">
-		<title>Damnatio Memoriae - Source Text</title>
-	</head>
+<body>
 
-	<body bgcolor="#ffffff">
-		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
-					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
-					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2006) - the Inform 7 source text</font></h3>
-				</td></tr>
-		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_0.html">Previous</a><br><a href="source_2.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 2 - Protecting</b>
-<br>
+<div class = "container">
 
-<br>
-Protection relates one thing to one thing.
-<br>
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1" /></a></span>
+</div>
 
-<br>
-The verb to protect (he protects, they protect, he protected, it is protected, he is protecting) implies the protection relation.
-<br>
+<div class ="sourceintroduction">
+	<h1>
+		<span>Damnatio Memoriae</span> <span class="pagination">— 3 of 34</span>
+	</h1>
+	<h2>
+		<span>Emily Short</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 6</span>
+	</div>
+</div>
 
-<br>
-Before burning the player when the player is protected by Clemens:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You hold the flame to your arm as long as you can stand. Clemens begins to thrash back and forth, in the grip of some delirium, but doesn't wake.</font>&quot;.
-<br>
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_0.html">Previous</a></li><li><a href="source_2.html">Next</a></li>
+</ul>
+</div>
 
-<br>
-Before burning something which is protected by an important impervious thing (called the protector):
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[if the noun is the player]You barely feel anything, thanks to[otherwise][The noun] resists flame, thanks to its link with[end if] [the protector].</font>&quot; instead.
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-Before attacking something which is protected by an important sturdy thing (called the protector):
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the noun is a person, continue the action;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The noun] fails to shatter, thanks to its link with [the protector].</font>&quot; instead.
-<br>
+<div class = "source">
+<p class="indent0"><span class="heading">Chapter 2 - Protecting</span></p><p class="indent0"></p><p class="indent0">Protection relates one thing to one thing.</p><p class="indent0"></p><p class="indent0">The verb to protect (he protects, they protect, he protected, it is protected, he is protecting) implies the protection relation.</p><p class="indent0"></p><p class="indent0">Before burning the player when the player is protected by Clemens:</p><p class="indent1">say &quot;<span class="quote">You hold the flame to your arm as long as you can stand. Clemens begins to thrash back and forth, in the grip of some delirium, but doesn't wake.</span>&quot;.</p><p class="indent0"></p><p class="indent0">Before burning something which is protected by an important impervious thing (called the protector):</p><p class="indent1">say &quot;<span class="quote">[</span><span class="substitution">if the noun is the player</span><span class="quote">]You barely feel anything, thanks to[</span><span class="substitution">otherwise</span><span class="quote">][</span><span class="substitution">The noun</span><span class="quote">] resists flame, thanks to its link with[</span><span class="substitution">end if</span><span class="quote">] [</span><span class="substitution">the protector</span><span class="quote">].</span>&quot; instead.</p><p class="indent1"></p><p class="indent0">Before attacking something which is protected by an important sturdy thing (called the protector):</p><p class="indent1">if the noun is a person, continue the action;</p><p class="indent1">say &quot;<span class="quote">[</span><span class="substitution">The noun</span><span class="quote">] fails to shatter, thanks to its link with [</span><span class="substitution">the protector</span><span class="quote">].</span>&quot; instead.</p><p class="indent0"></p><p class="indent0">After printing the name of something (called slave) which is affected by something (called master) while taking inventory: </p><p class="indent1">if slave affects the master, do nothing;</p><p class="indent1">otherwise say &quot;<span class="quote"> (enslaved)</span>&quot;;</p><p class="indent0"></p><p class="indent0">After printing the name of something (called master) which affects something important (called slave) while taking inventory:  </p><p class="indent1">if slave affects the master, say &quot;<span class="quote"> ([</span><span class="substitution">if the slave protects the master</span><span class="quote">]reverse [</span><span class="substitution">end if</span><span class="quote">]linked)</span>&quot;;</p><p class="indent1">otherwise say &quot;<span class="quote"> (controlling)</span>&quot;;</p><p class="indent1"></p>
+</div>
 
-<br>
-After printing the name of something (called slave) which is affected by something (called master) while taking inventory: 
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if slave affects the master, do nothing;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;otherwise say &quot;<font color=#000080> (enslaved)</font>&quot;;
-<br>
+<div class ="notes">
 
-<br>
-After printing the name of something (called master) which affects something important (called slave) while taking inventory:  
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if slave affects the master, say &quot;<font color=#000080> ([if the slave protects the master]reverse [end if]linked)</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;otherwise say &quot;<font color=#000080> (controlling)</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-</font>
-					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
-					<p></p>
-				</td></tr></table>
-	</body>
+</div>
+
+</div>
+
+</body>
 
 </html>

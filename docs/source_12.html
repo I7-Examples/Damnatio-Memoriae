@@ -1,152 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<head>
+  <title>Emily Short - Damnatio Memoriae — 14 of 34</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Emily Short" />
+  <meta name="description" content="A page for the game Damnatio Memoriae by Emily Short." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
 
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-		<meta name="generator" content="Adobe GoLive">
-		<title>Damnatio Memoriae - Source Text</title>
-	</head>
+<body>
 
-	<body bgcolor="#ffffff">
-		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
-					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
-					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2006) - the Inform 7 source text</font></h3>
-				</td></tr>
-		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_11.html">Previous</a><br><a href="source_13.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 4 - Breaking</b>
-<br>
+<div class = "container">
 
-<br>
-Understand &quot;<font color=#000080>attack [something] with [something held]</font>&quot; as attacking it with.
-<br>
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1" /></a></span>
+</div>
 
-<br>
-Attacking it with is an action applying to two things.
-<br>
+<div class ="sourceintroduction">
+	<h1>
+		<span>Damnatio Memoriae</span> <span class="pagination">— 14 of 34</span>
+	</h1>
+	<h2>
+		<span>Emily Short</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 6</span>
+	</div>
+</div>
 
-<br>
-Check attacking it with:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the second noun is the lamp, try burning the noun instead;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the second noun is a paper, say &quot;<font color=#000080>[The second noun] is a very ineffective bludgeon.</font>&quot; instead;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the second noun is a book, say &quot;<font color=#000080>[The second noun] is not yet weighty enough to be any use in that sense.</font>&quot; instead; 
-<br>
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_11.html">Previous</a></li><li><a href="source_13.html">Next</a></li>
+</ul>
+</div>
 
-<br>
-Carry out attacking it with:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;try attacking the noun.
-<br>
+<div class = "source">
+<p class="indent0"><span class="heading">Chapter 4 - Breaking</span></p><p class="indent0"></p><p class="indent0">Understand &quot;<span class="quote">attack [</span><span class="substitution">something</span><span class="quote">] with [</span><span class="substitution">something preferably held</span><span class="quote">]</span>&quot; as attacking it with.</p><p class="indent0"></p><p class="indent0">Attacking it with is an action applying to one thing and one carried thing.</p><p class="indent0"></p><p class="indent0">Check attacking it with:</p><p class="indent1">if the second noun is the lamp, try burning the noun instead;</p><p class="indent1">if the second noun is a paper, say &quot;<span class="quote">[</span><span class="substitution">The second noun</span><span class="quote">] is a very ineffective bludgeon.</span>&quot; instead;</p><p class="indent1">if the second noun is a book, say &quot;<span class="quote">[</span><span class="substitution">The second noun</span><span class="quote">] is not yet weighty enough to be any use in that sense.</span>&quot; instead; </p><p class="indent0"></p><p class="indent0">Carry out attacking it with:</p><p class="indent1">try attacking the noun.</p><p class="indent0"></p><p class="indent0">Understand &quot;<span class="quote">rip [</span><span class="substitution">something</span><span class="quote">]</span>&quot; or &quot;<span class="quote">rip up [</span><span class="substitution">something</span><span class="quote">]</span>&quot; or &quot;<span class="quote">rip [</span><span class="substitution">something</span><span class="quote">] up</span>&quot; as attacking.</p><p class="indent0"></p><p class="indent0">Understand the commands &quot;<span class="quote">tear</span>&quot; or &quot;<span class="quote">shred</span>&quot; as &quot;<span class="quote">rip</span>&quot;.</p><p class="indent0"></p><p class="indent0">Instead of attacking a paper:</p><p class="indent1">say &quot;<span class="quote">You rip [</span><span class="substitution">the noun</span><span class="quote">] to shreds.</span>&quot;;</p><p class="indent1">destroy the noun. </p><p class="indent0"></p><p class="indent0">Instead of attacking something fragile:</p><p class="indent1">say &quot;<span class="quote">You smash [</span><span class="substitution">the noun</span><span class="quote">].</span>&quot;;</p><p class="indent1">destroy the noun.</p><p class="indent1"></p><p class="indent0">A thing has some text called shattering description. The shattering description of a thing is usually &quot;<span class="quote">shatters under an invisible blow, and the link dies with it</span>&quot;. </p><p class="indent0"></p><p class="indent0">Understand the commands &quot;<span class="quote">kill</span>&quot; and &quot;<span class="quote">attack</span>&quot; and &quot;<span class="quote">murder</span>&quot; and &quot;<span class="quote">destroy</span>&quot; as something new. Understand &quot;<span class="quote">kill [</span><span class="substitution">someone</span><span class="quote">]</span>&quot; as killing. Understand &quot;<span class="quote">kill [</span><span class="substitution">something</span><span class="quote">]</span>&quot; as killing. Understand the commands &quot;<span class="quote">murder</span>&quot; and &quot;<span class="quote">destroy</span>&quot; and &quot;<span class="quote">attack</span>&quot; as &quot;<span class="quote">kill</span>&quot;. </p><p class="indent0"></p><p class="indent0">Killing is an action applying to one thing. Instead of killing a thing which is not a person, try attacking the noun. Carry out killing: say &quot;<span class="quote"></span>&quot;</p><p class="indent1"></p><p class="indent0">Instead of attacking the player when Clemens protects the player:</p><p class="indent1">say &quot;<span class="quote">You hit yourself. It does hurt, but you suspect Clemens gets the brunt of it.</span>&quot;</p><p class="indent0"></p><p class="indent0">Instead of attacking the player:</p><p class="indent1">if the player affects Clemens:</p><p class="indent2">say &quot;<span class="quote">You punch yourself in the thigh, which is not a very edifying process. If Clemens feels anything, you receive no sign of it.</span>&quot;;</p><p class="indent1">otherwise:</p><p class="indent2">say &quot;<span class="quote">You hit yourself, which does hurt, but accomplishes no useful purpose. Killing yourself, now, that would require a bit more focus.</span>&quot;</p><p class="indent1"></p><p class="indent0">Instead of killing the player:</p><p class="indent1">if Clemens protects the player:</p><p class="indent2">say &quot;<span class="quote">You make some attempts to slit your wrists, but the blood just flows and flows.</span>&quot; instead;</p><p class="indent1">if the player affects Clemens:</p><p class="indent2">say &quot;<span class="quote">You attack yourself; it is Clemens who dies.</span>&quot;;</p><p class="indent2">destroy Clemens;</p><p class="indent1">otherwise:</p><p class="indent2">say &quot;<span class="quote">Seeing no honorable and unembarrassing way out of your predicament, you open your veins, and are soon free from earthly cares.</span>&quot;;</p><p class="indent2">end the game in death.</p><p class="indent1"></p><p class="indent0">Instead of attacking something sturdy:</p><p class="indent1">say &quot;<span class="quote">[</span><span class="substitution">The noun</span><span class="quote">] is not so easily destroyed.</span>&quot;</p><p class="indent0"></p><p class="indent0">Instead of attacking something fragile which affects something important (called the slave):</p><p class="indent1">if the slave is sturdy and the slave protects the noun:</p><p class="indent2">say &quot;<span class="quote">[</span><span class="substitution">The noun</span><span class="quote">] resists smashing, thanks to its link with [</span><span class="substitution">the slave</span><span class="quote">].</span>&quot; instead;</p><p class="indent1">if the slave affects the noun:</p><p class="indent2">say &quot;<span class="quote">[</span><span class="substitution">The noun</span><span class="quote">] shatters.</span>&quot;;</p><p class="indent2">destroy the noun;</p><p class="indent2">if the slave is visible:</p><p class="indent3">say line break; </p><p class="indent1">if the slave is visible:</p><p class="indent2">say &quot;<span class="quote">[</span><span class="substitution">The slave</span><span class="quote">] [</span><span class="substitution">shattering description of the slave</span><span class="quote">].</span>&quot;;</p><p class="indent1">destroy the slave;</p><p class="indent1">if the noun is ruined:</p><p class="indent2">say line break.</p><p class="indent0"></p>
+</div>
 
-<br>
-Understand &quot;<font color=#000080>rip [something]</font>&quot; or &quot;<font color=#000080>rip up [something]</font>&quot; or &quot;<font color=#000080>rip [something] up</font>&quot; as attacking.
-<br>
+<div class ="notes">
 
-<br>
-Understand the commands &quot;<font color=#000080>tear</font>&quot; or &quot;<font color=#000080>shred</font>&quot; as &quot;<font color=#000080>rip</font>&quot;.
-<br>
+</div>
 
-<br>
-Instead of attacking a paper:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You rip [the noun] to shreds.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun. 
-<br>
+</div>
 
-<br>
-Instead of attacking something fragile:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You smash [the noun].</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun.
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-A thing has a property called shattering description. The shattering description of a thing is usually &quot;<font color=#000080>shatters under an invisible blow, and the link dies with it</font>&quot;. 
-<br>
-
-<br>
-Understand the commands &quot;<font color=#000080>kill</font>&quot; and &quot;<font color=#000080>attack</font>&quot; and &quot;<font color=#000080>murder</font>&quot; and &quot;<font color=#000080>destroy</font>&quot; as something new. Understand &quot;<font color=#000080>kill [someone]</font>&quot; as killing. Understand &quot;<font color=#000080>kill [something]</font>&quot; as killing. Understand the commands &quot;<font color=#000080>murder</font>&quot; and &quot;<font color=#000080>destroy</font>&quot; and &quot;<font color=#000080>attack</font>&quot; as &quot;<font color=#000080>kill</font>&quot;. 
-<br>
-
-<br>
-Killing is an action applying to one thing. Instead of killing a thing which is not a person, try attacking the noun. Carry out killing: say &quot;<font color=#000080></font>&quot;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-Instead of attacking the player when Clemens protects the player:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You hit yourself. It does hurt, but you suspect Clemens gets the brunt of it.</font>&quot;
-<br>
-
-<br>
-Instead of attacking the player:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the player affects Clemens, say &quot;<font color=#000080>You punch yourself in the thigh, which is not a very edifying process. If Clemens feels anything, you receive no sign of it.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;otherwise say &quot;<font color=#000080>You hit yourself, which does hurt, but accomplishes no useful purpose. Killing yourself, now, that would require a bit more focus.</font>&quot;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-Instead of killing the player:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if Clemens protects the player, say &quot;<font color=#000080>You make some attempts to slit your wrists, but the blood just flows and flows.</font>&quot; instead;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the player affects Clemens
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;begin;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You attack yourself; it is Clemens who dies.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;destroy Clemens;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>Seeing no honorable and unembarrassing way out of your predicament, you open your veins, and are soon free from earthly cares.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end the game in death;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;end if.
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-Instead of attacking something sturdy:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The noun] is not so easily destroyed.</font>&quot;
-<br>
-
-<br>
-Instead of attacking something fragile which affects something important (called the slave):
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the slave is sturdy and the slave protects the noun, say &quot;<font color=#000080>[The noun] resists smashing, thanks to its link with [the slave].</font>&quot; instead;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the slave affects the noun
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;begin;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The noun] shatters.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;destroy the noun;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if the slave is visible, say line break;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;end if;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the slave is visible, say &quot;<font color=#000080>[The slave] [shattering description of the slave].</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;destroy the slave;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the noun is ruined, say line break.
-<br>
-
-<br>
-</font>
-					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
-					<p></p>
-				</td></tr></table>
-	</body>
+</body>
 
 </html>

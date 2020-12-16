@@ -1,100 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<head>
+  <title>Emily Short - Damnatio Memoriae — 6 of 34</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Emily Short" />
+  <meta name="description" content="A page for the game Damnatio Memoriae by Emily Short." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
 
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-		<meta name="generator" content="Adobe GoLive">
-		<title>Damnatio Memoriae - Source Text</title>
-	</head>
+<body>
 
-	<body bgcolor="#ffffff">
-		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
-					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
-					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2006) - the Inform 7 source text</font></h3>
-				</td></tr>
-		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_3.html">Previous</a><br><a href="source_5.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 2 - Reverse Link</b>
-<br>
+<div class = "container">
 
-<br>
-Understand &quot;<font color=#000080>reverse link [something] to [something]</font>&quot; as reverse linking it to. Understand &quot;<font color=#000080>reverse [something] to [something]</font>&quot; as reverse linking it to. Understand &quot;<font color=#000080>reverse-link [something] to [something]</font>&quot; as reverse linking it to.
-<br>
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1" /></a></span>
+</div>
 
-<br>
-Reverse linking it to is an action applying to two things.
-<br>
+<div class ="sourceintroduction">
+	<h1>
+		<span>Damnatio Memoriae</span> <span class="pagination">— 6 of 34</span>
+	</h1>
+	<h2>
+		<span>Emily Short</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 6</span>
+	</div>
+</div>
 
-<br>
-Carry out reverse linking it to:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;now the noun affects the second noun;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;now the second noun affects the noun;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;now the noun protects the second noun;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;now the second noun protects the noun.
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-Report reverse linking it to:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You build a mutually-effective, and protective, link between [the noun] and [the second noun]</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the noun is impervious or the second noun is impervious
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;begin;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>. Both are now resistant to fire</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if noun is sturdy or the second noun is sturdy
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080> and casual smashing.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if noun is sturdy or the second noun is sturdy
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>. Both are now resistant to being smashed.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;end if;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-After reverse linking a person to a person:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You reverse link [the noun] to [the second noun]. While one of you lives, so does the other.</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the noun incriminates the second noun, now the noun does not incriminate the second noun;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if the second noun incriminates the noun, now the second noun does not incriminate the noun.
-<br>
- 
-<br>
-Reverse linking something to something is labor.
-<br>
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_3.html">Previous</a></li><li><a href="source_5.html">Next</a></li>
+</ul>
+</div>
 
-<br>
-</font>
-					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
-					<p></p>
-				</td></tr></table>
-	</body>
+<div class = "source">
+<p class="indent0"><span class="heading">Chapter 2 - Reverse Link</span></p><p class="indent0"></p><p class="indent0">Understand &quot;<span class="quote">reverse link [</span><span class="substitution">something</span><span class="quote">] to [</span><span class="substitution">something</span><span class="quote">]</span>&quot; as reverse linking it to. Understand &quot;<span class="quote">reverse [</span><span class="substitution">something</span><span class="quote">] to [</span><span class="substitution">something</span><span class="quote">]</span>&quot; as reverse linking it to. Understand &quot;<span class="quote">reverse-link [</span><span class="substitution">something</span><span class="quote">] to [</span><span class="substitution">something</span><span class="quote">]</span>&quot; as reverse linking it to.</p><p class="indent0"></p><p class="indent0">Reverse linking it to is an action applying to two things.</p><p class="indent0"></p><p class="indent0">Carry out reverse linking it to:</p><p class="indent1">now the noun affects the second noun;</p><p class="indent1">now the second noun affects the noun;</p><p class="indent1">now the noun protects the second noun;</p><p class="indent1">now the second noun protects the noun.</p><p class="indent1"></p><p class="indent0">Report reverse linking it to:</p><p class="indent1">say &quot;<span class="quote">You build a mutually-effective, and protective, link between [</span><span class="substitution">the noun</span><span class="quote">] and [</span><span class="substitution">the second noun</span><span class="quote">]</span>&quot;;</p><p class="indent1">if the noun is impervious or the second noun is impervious:</p><p class="indent2">say &quot;<span class="quote">. Both are now resistant to fire</span>&quot;;</p><p class="indent2">if noun is sturdy or the second noun is sturdy:</p><p class="indent3">say &quot;<span class="quote"> and casual smashing.</span>&quot;;</p><p class="indent2">otherwise:</p><p class="indent3">say &quot;<span class="quote">.</span>&quot;;</p><p class="indent1">otherwise:</p><p class="indent2">if noun is sturdy or the second noun is sturdy:</p><p class="indent3">say &quot;<span class="quote">. Both are now resistant to being smashed.</span>&quot;;</p><p class="indent2">otherwise:</p><p class="indent3">say &quot;<span class="quote">.</span>&quot;</p><p class="indent1"></p><p class="indent0">After reverse linking a person to a person:</p><p class="indent1">say &quot;<span class="quote">You reverse link [</span><span class="substitution">the noun</span><span class="quote">] to [</span><span class="substitution">the second noun</span><span class="quote">]. While one of you lives, so does the other.</span>&quot;;</p><p class="indent1">if the noun incriminates the second noun:</p><p class="indent2">now the noun does not incriminate the second noun;</p><p class="indent1">if the second noun incriminates the noun:</p><p class="indent2">now the second noun does not incriminate the noun.</p><p class="indent0"> </p><p class="indent0">Reverse linking something to something is labor.</p><p class="indent0"></p>
+</div>
+
+<div class ="notes">
+
+</div>
+
+</div>
+
+</body>
 
 </html>

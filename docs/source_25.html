@@ -1,66 +1,49 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<head>
+  <title>Emily Short - Damnatio Memoriae — 27 of 34</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Emily Short" />
+  <meta name="description" content="A page for the game Damnatio Memoriae by Emily Short." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
 
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-		<meta name="generator" content="Adobe GoLive">
-		<title>Damnatio Memoriae - Source Text</title>
-	</head>
+<body>
 
-	<body bgcolor="#ffffff">
-		<table border="0" cellpadding="2"><tr><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></font></td><td align="left" valign="top">
-					<h3><font color="#0000cc" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">Damnatio Memoriae</font></h3>
-					<h3><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif">An interactive fiction by Emily Short (2006) - the Inform 7 source text</font></h3>
-				</td></tr>
-		<tr align="left" valign="top"><td align="left" valign="top"><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><a href="index.html">Home page</a><br><br><a href="source.html">Contents</a><br><a href="source_24.html">Previous</a><br><a href="source_26.html">Next</a><br><br><a href="source.txt">Complete text</a></font></td><td align="left" valign="top"><font face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"><b>Chapter 8 - The Lamp</b>
-<br>
+<div class = "container">
 
-<br>
-A liquid is a kind of thing. Before labor when the noun is a liquid or the second noun is a liquid: say &quot;<font color=#000080>You have no such powers over liquids.</font>&quot; instead. A liquid has a property called the spilling description. The spilling description of a liquid is usually &quot;<font color=#000080>spills out on the ground, and soon soaks in</font>&quot;.
-<br>
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1" /></a></span>
+</div>
 
-<br>
-The lamp is a lit container carried by the player. The description is &quot;<font color=#000080>A [if lit]lit[otherwise]now-empty[end if] oil lamp.</font>&quot; It is fragile. The lamp contains a quantity of oil. The oil is a liquid. Instead of doing something to the oil, say &quot;<font color=#000080>The oil is busily burning.</font>&quot; The lamp resembles the pitcher. The spilling description of the oil is &quot;<font color=#000080>spills on the ground, where it spreads fast -- you briefly worry that you're about to set something on fire -- but the flames soon flicker out and the oil itself soaks in</font>&quot;.
-<br>
+<div class ="sourceintroduction">
+	<h1>
+		<span>Damnatio Memoriae</span> <span class="pagination">— 27 of 34</span>
+	</h1>
+	<h2>
+		<span>Emily Short</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 6</span>
+	</div>
+</div>
 
-<br>
-Instead of inserting something into the lamp:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>The lamp is oily, and needs no other contents.</font>&quot;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-Understand &quot;<font color=#000080>empty [something]</font>&quot; as emptying. Emptying is an action applying to one thing. Check emptying: if the noun is a person, say &quot;<font color=#000080>A disturbing notion worthy of a Gaul.</font>&quot; instead; if the noun is not a container, say &quot;<font color=#000080>[The noun] [is/are] incapable of containment in any case.</font>&quot; instead; if the noun does not contain something, say &quot;<font color=#000080>[The noun] [is/are] already empty.</font>&quot; instead. Carry out emptying: now every thing in the noun is in the location. Report emptying: say &quot;<font color=#000080>You dump out [the noun], leaving [it/them] empty.</font>&quot;
-<br>
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_24.html">Previous</a></li><li><a href="source_26.html">Next</a></li>
+</ul>
+</div>
 
-<br>
-Instead of emptying the lamp when the oil is in the lamp:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;remove the oil from play;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>[The oil] [spilling description of the oil].</font>&quot;;
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;change the lamp to unlit.
-<br>
+<div class = "source">
+<p class="indent0"><span class="heading">Chapter 8 - The Lamp</span></p><p class="indent0"></p><p class="indent0">A liquid is a kind of thing. Before labor when the noun is a liquid or the second noun is a liquid: say &quot;<span class="quote">You have no such powers over liquids.</span>&quot; instead. A liquid has some text called the spilling description. The spilling description of a liquid is usually &quot;<span class="quote">spills out on the ground, and soon soaks in</span>&quot;.</p><p class="indent0"></p><p class="indent0">The lamp is a lit container carried by the player. The description is &quot;<span class="quote">A [</span><span class="substitution">if lit</span><span class="quote">]lit[</span><span class="substitution">otherwise</span><span class="quote">]now-empty[</span><span class="substitution">end if</span><span class="quote">] oil lamp.</span>&quot; It is fragile. The lamp contains a quantity of oil. The oil is a liquid. Instead of doing something to the oil, say &quot;<span class="quote">The oil is busily burning.</span>&quot; The lamp resembles the pitcher. The spilling description of the oil is &quot;<span class="quote">spills on the ground, where it spreads fast -- you briefly worry that you're about to set something on fire -- but the flames soon flicker out and the oil itself soaks in</span>&quot;.</p><p class="indent0"></p><p class="indent0">Instead of inserting something into the lamp:</p><p class="indent1">say &quot;<span class="quote">The lamp is oily, and needs no other contents.</span>&quot;</p><p class="indent1"></p><p class="indent0">Understand &quot;<span class="quote">empty [</span><span class="substitution">something</span><span class="quote">]</span>&quot; as emptying. Emptying is an action applying to one thing. Check emptying: if the noun is a person, say &quot;<span class="quote">A disturbing notion worthy of a Gaul.</span>&quot; instead; if the noun is not a container, say &quot;<span class="quote">[</span><span class="substitution">The noun</span><span class="quote">] [</span><span class="substitution">is-are</span><span class="quote">] incapable of containment in any case.</span>&quot; instead; if the noun does not contain something, say &quot;<span class="quote">[</span><span class="substitution">The noun</span><span class="quote">] [</span><span class="substitution">is-are</span><span class="quote">] already empty.</span>&quot; instead. Carry out emptying: now every thing in the noun is in the location. Report emptying: say &quot;<span class="quote">You dump out [</span><span class="substitution">the noun</span><span class="quote">], leaving [</span><span class="substitution">it-them</span><span class="quote">] empty.</span>&quot;</p><p class="indent0"></p><p class="indent0">Instead of emptying the lamp when the oil is in the lamp:</p><p class="indent1">remove the oil from play;</p><p class="indent1">say &quot;<span class="quote">[</span><span class="substitution">The oil</span><span class="quote">] [</span><span class="substitution">spilling description of the oil</span><span class="quote">].</span>&quot;;</p><p class="indent1">change the lamp to unlit.</p><p class="indent0"></p><p class="indent0">Before burning something when the player is not carrying the lit lamp:</p><p class="indent1">say &quot;<span class="quote">It would help if you had a fire source.</span>&quot; instead.</p><p class="indent0"></p><p class="indent0">Instead of thinking:</p><p class="indent1">say &quot;<span class="quote">You take a quick glance around the room, noticing everything that might incriminate: [</span><span class="substitution">the list of visible things which incriminate someone</span><span class="quote">][</span><span class="substitution">if the number of visible things which incriminate someone is 1</span><span class="quote">] is the only thing left[</span><span class="substitution">end if</span><span class="quote">].</span>&quot;; </p><p class="indent1"></p>
+</div>
 
-<br>
-Before burning something when the player is not carrying the lit lamp:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>It would help if you had a fire source.</font>&quot; instead.
-<br>
+<div class ="notes">
 
-<br>
-Instead of thinking:
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;say &quot;<font color=#000080>You take a quick glance around the room, noticing everything that might incriminate: [the list of visible things which incriminate someone][if the number of visible things which incriminate someone is 1] is the only thing left[end if].</font>&quot;; 
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-</font>
-					<p><font size="-1" face="Trebuchet MS, Geneva, Arial, Helvetica, SunSans-Regular, sans-serif"></font></p>
-					<p></p>
-				</td></tr></table>
-	</body>
+</div>
+
+</div>
+
+</body>
 
 </html>
