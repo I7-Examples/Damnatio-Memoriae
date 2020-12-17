@@ -1,20 +1,18 @@
-"Damnatio Memoriae" by Emily Short.
+"Damnatio Memoriae" by Emily Short
 
-Include (- Serial "101025"; -).
+Include (- Serial "201217"; -).
 The story creation year is 2006.
 
 The story headline is "A story of the Lavori d'Aracne". The story genre is "Historical". The story description is "14 AD. Agrippa Postumus, grandson of the recently-deceased Augustus, tries to avoid death at the hands of the next emperor, Tiberius. At his disposal: a couple of old manuscripts, a lamp, and a recalcitrant slave. And a powerful knowledge of the Art of Venus Genetrix, of course -- the magic eventually known as the Lavori d'Aracne.
 
 Damnatio Memoriae belongs to a series with the author's previous game Savoir-Faire; though it can stand alone, the game's mechanics will make most sense to players already familiar with that work. 
 
-It is a fast, timed game, taking only a few minutes to play once, but probably requiring multiple attempts to bring to a satisfactory conclusion." The release number is 6. 
-
-Use no scoring. Use memory economy. Include Plurality by Emily Short.
+It is a fast, timed game, taking only a few minutes to play once, but probably requiring multiple attempts to bring to a satisfactory conclusion." The release number is 7. 
 
 Release along with cover art, 
 	the introductory booklet, 
 	a file of "Game Overview" called "Introduction.pdf", 
-	a solution,
+	[a solution,]
 	a file of "Walkthroughs" called "Walkthrough.txt",
 	a file of "Making of..." called "Overview.html",
 	the source text, 
@@ -300,7 +298,7 @@ Chapter 2 - Destruction in General
 To destroy (item - a person):
 	if the item is the player:
 		say "That turns out to have been a humungous mistake.";
-		end the game in death;
+		end the story saying "You have died";
 	clear connections to the item;
 	let context be the holder of the item;
 	move corpse to context;
@@ -423,7 +421,7 @@ Instead of killing the player:
 		destroy Clemens;
 	otherwise:
 		say "Seeing no honorable and unembarrassing way out of your predicament, you open your veins, and are soon free from earthly cares.";
-		end the game in death.
+		end the story saying "You have died".
 	
 Instead of attacking something sturdy:
 	say "[The noun] is not so easily destroyed."
@@ -898,12 +896,12 @@ The lamp is a lit container carried by the player. The description is "A [if lit
 Instead of inserting something into the lamp:
 	say "The lamp is oily, and needs no other contents."
 	
-Understand "empty [something]" as emptying. Emptying is an action applying to one thing. Check emptying: if the noun is a person, say "A disturbing notion worthy of a Gaul." instead; if the noun is not a container, say "[The noun] [is-are] incapable of containment in any case." instead; if the noun does not contain something, say "[The noun] [is-are] already empty." instead. Carry out emptying: now every thing in the noun is in the location. Report emptying: say "You dump out [the noun], leaving [it-them] empty."
+Understand "empty [something]" as emptying. Emptying is an action applying to one thing. Check emptying: if the noun is a person, say "A disturbing notion worthy of a Gaul." instead; if the noun is not a container, say "[The noun] [are] incapable of containment in any case." instead; if the noun does not contain something, say "[The noun] [are] already empty." instead. Carry out emptying: now every thing in the noun is in the location. Report emptying: say "You dump out [the noun], leaving [them] empty."
 
 Instead of emptying the lamp when the oil is in the lamp:
 	remove the oil from play;
 	say "[The oil] [spilling description of the oil].";
-	change the lamp to unlit.
+	now the lamp is unlit.
 
 Before burning something when the player is not carrying the lit lamp:
 	say "It would help if you had a fire source." instead.
@@ -928,7 +926,7 @@ Volume 5 - Plot and Time
 Book 1 - Beginnings
 
 When play begins:
-	change the right hand status line to "[time of day]";
+	now the right hand status line is "[time of day]";
 	say "[bold type]Planasia, in the Tyrrhenian Sea[roman type]
 	
 Augustus is dead.
@@ -1151,7 +1149,7 @@ An endgame rule:
 There ensues a perverse comedy, with them attempting bludgeonings and hackings and even forcing you to take poison, which you would find amusing if it weren't so hugely unpleasant. For an hour you run blood for them from opened veins, until they get tired of the display and bandage you up again.
 
 The end of it all is that they carry you off by force to be imprisoned somewhere much deeper and more unpleasant; so while you do not die, you can't count it an entire success, either.";
-				end the game saying "You have been imprisoned";
+				end the story saying "You have been imprisoned";
 				rule succeeds;
 			otherwise:
 				if Clemens affects the player:
@@ -1167,7 +1165,7 @@ At once a wound opens in the slave's chest. He screams, the soldiers scream, the
 
 Eventually you, and the Clemens-corpse, are packed up in wagons under guard and taken to a deeper prison where, if they cannot figure out how to kill you, they can make your life deeply unhappy. And this all could have ended so much better.";
 						obliterate Clemens;
-						end the game saying "You have been imprisoned";
+						end the story saying "You have been imprisoned";
 						rule succeeds;
 					otherwise:
 						say "[start]It seems the soldiers have been given permission to kill you immediately. This process involves a spear through the heart, which is intensely painful, and which you feel with much more clarity than you would have imagined possible.
@@ -1177,11 +1175,11 @@ But you do not die of it.
 Instead you lie very still.
 						
 Later, they go out, even expressing a little distress at having had to kill you. Then you get up, and remove the spear, and wander around to where the Clemens corpse is, bleeding from the torso."; 
-						end the game saying "You have faked your own death";
+						end the story saying "You have faked your own death";
 						rule succeeds; 
 		otherwise:
 			say "[start]It seems the soldiers have been given permission to kill you immediately, and this they proceed to do...";
-			end the game in death.
+			end the story saying "You have died".
 	
 An endgame rule:
 	if the soldiers can see the player and the player is apparently innocent:
@@ -1238,10 +1236,10 @@ A summation rule:
 
 To say start:
 	if started printing is 0, say line break;
-	change started printing to 1;
+	now started printing is 1;
 
 The last endgame rule:
-	end the game in victory;
+	end the story finally saying "You have won";
 	rule succeeds; 
 	
 Some soldiers are a man. "The soldiers are all standing around looking at you in a highly unpleasant manner."
@@ -1263,7 +1261,7 @@ Initial message is a number that varies.
 A thing can be examined or unexamined.
 
 Carry out examining something:
-	change the noun to examined. 
+	now the noun is examined. 
 
 Volume 6 - Cosmetics
 	
@@ -1279,20 +1277,20 @@ Understand "menu" or "credits" as asking for help. Understand "help" or "hint" o
 
 Asking for help is an action out of world.
 Carry out asking for help (this is the help request rule):
-	change the current menu to the Table of Basic Help Options;
+	now the current menu is the Table of Basic Help Options;
 	carry out the displaying activity;
 	clear the screen;
 	try looking.
 
 Table of Basic Help Options
 title	subtable	description	toggle
-"Introduction to [story title]"	a table-name	"[bold type][story title][roman type][paragraph break][story description]"	a rule
+"Introduction to [story title]"	--	"[bold type][story title][roman type][paragraph break][story description]"	a rule
 "Instructions for Playing IF in General"	Table of Instruction Options	--	--
 
 Table of Instruction Options
 title	subtable	description	toggle
-"About Interactive Fiction"	a table-name	"The game you are playing is a work of Interactive Fiction.  In interactive fiction you play the main character of a story.  You type commands which determine the actions of the character and the flow of the plot.  Some IF games include graphics, but most do not: the imagery is provided courtesy of your imagination.  On the other hand, there's a wide range of action available: whereas in other games you may be restricted to shooting, movement, or searching items you can click on with a mouse, IF allows you a wide range of verbs."	a rule
-"What to do with [command prompt]"	a table-name	"The [command prompt] sign is where the game says, 'Okay, what do you want to do now?'  You may respond by typing an instruction -- usually an imperative verb, possibly followed by prepositions and objects.  So, for instance, LOOK, LOOK AT FISH, TAKE FISH."	a rule
+"About Interactive Fiction"	--	"The game you are playing is a work of Interactive Fiction.  In interactive fiction you play the main character of a story.  You type commands which determine the actions of the character and the flow of the plot.  Some IF games include graphics, but most do not: the imagery is provided courtesy of your imagination.  On the other hand, there's a wide range of action available: whereas in other games you may be restricted to shooting, movement, or searching items you can click on with a mouse, IF allows you a wide range of verbs."	--
+"What to do with [command prompt]"	--	"The [command prompt] sign is where the game says, 'Okay, what do you want to do now?'  You may respond by typing an instruction -- usually an imperative verb, possibly followed by prepositions and objects.  So, for instance, LOOK, LOOK AT FISH, TAKE FISH."	--
 "Getting Started"	--	"The first thing you want to do when starting a game is acquaint yourself with your surroundings and get a sense of your goal. To this end, you should read the introductory text carefully. Sometimes it contains clues. You will also want to look at the room you are in. Notice where the exits from the room are, and what objects are described here. If any of these seem interesting, you may want to EXAMINE them. [paragraph break]You might also want to examine yourself (EXAMINE ME) to see whether the author has left you any clues about your character. TAKE INVENTORY will tell you what you're carrying, as well.[paragraph break]Once you've gotten your bearings, you may want to explore. Move from room to room, and check out every location available."	--
 "Rooms and Travel"	--	"At any given time, you are in a specific location, or room. When you go into a room, the game will print a description of what you can see there. This description will contain two vital kinds of information: things in the room you can interact with or take, and a list of exits, or ways out. If you want to see the description again, you may just type LOOK. [paragraph break]When you want to leave a location and go to another one, you may communicate this to the game using compass directions: eg, GO NORTH. For simplicity's sake, you are allowed to omit the word GO, and to abbreviate the compass directions. So you may use NORTH, SOUTH, EAST, WEST, NORTHEAST, SOUTHEAST, NORTHWEST, SOUTHWEST, UP, and DOWN, or in short form N, S, E, W, NE, SE, NW, SW, U, and D.[paragraph break]In some locations, IN and OUT will also be useful."	--
 "Objects"	--	"Throughout the game there will be assorted objects that you can do things with. Most importantly, you may TAKE or GET items, and (when you are tired of them) DROP them again. INVENTORY (abbreviated I) will list the items you are currently holding. [paragraph break]There are usually assorted things you may do with these objects. OPEN, CLOSE, WEAR, EAT, LOCK, and UNLOCK are especially common.[paragraph break]Occasionally, you will find that the game does not recognize the name of an object even though it has been described as being in the room with you. If this is the case, the object is just there for scenery, and you may assume that you do not need to interact with it."	--
