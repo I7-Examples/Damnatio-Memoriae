@@ -6,7 +6,7 @@ The story headline is "A story of the Lavori d'Aracne". The story genre is "Hist
 
 Damnatio Memoriae belongs to a series with the author's previous game Savoir-Faire; though it can stand alone, the game's mechanics will make most sense to players already familiar with that work. 
 
-It is a fast, timed game, taking only a few minutes to play once, but probably requiring multiple attempts to bring to a satisfactory conclusion." The release number is 8. 
+It is a fast, timed game, taking only a few minutes to play once, but probably requiring multiple attempts to bring to a satisfactory conclusion." The release number is 7. 
 
 Release along with cover art, 
 	the introductory booklet, 
