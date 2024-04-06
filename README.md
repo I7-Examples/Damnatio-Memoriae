@@ -12,4 +12,6 @@ It is a fast, timed game, taking only a few minutes to play once, but probably r
 
 ## Development
 
-Damnatio Memoriae is currently compatible with Inform 7 build 6M62.
+The Source Text is compatible with Inform 7 build 6M62.
+
+The Story File Format should be set to Blorbed Z-Code version 8.
